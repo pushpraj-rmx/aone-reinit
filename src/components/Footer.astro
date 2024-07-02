@@ -1,0 +1,151 @@
+---
+import logo from "@assets/img/logo/logo.webp";
+import { Image } from "astro:assets";
+---
+
+<footer class="footer-area pt-95" style="position: relative;">
+  <div class="animated-footer" style="position:absolute; top:0;height:100%; z-index: -1;">
+    <div class="city-background"></div>
+    <div class="plane"></div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6">
+        <div class="footer-widget footer-2 footer-btm-mobile ml-30">
+          <h3 class="footer-widget__title mb-25">Quick Links</h3>
+          <ul class="footer-widget_menu-link">
+            <li><a href="/professional-year-program">Professional Year Program</a></li>
+            <li><a href="/visa-documentation-guidance">Visa Documentation Guidance</a></li>
+            <li><a href="/schalorship-assistance">Scholarship Assistance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+        <div class="footer-widget footer-4 footer-btm-mobile ml-40">
+          <h3 class="footer-widget__title mb-25">Helpful Links</h3>
+          <ul class="footer-widget_menu-link-info">
+            <li><a href="/branches">Study Abroad</a></li>
+            <li><a href="/branches">Our Associations</a></li>
+            <li><a href="/branches">Mission & Vision</a></li>
+            <li><a href="/branches">Code of Conduct</a></li>
+            <li><a href="/branches">Enquiry Page</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+        <div class="footer-widget footer-3 footer-btm-mobile ml-50">
+          <h3 class="footer-widget__title mb-25">Branches</h3>
+          <ul class="footer-widget_menu-link">
+            <li><a href="/branches">Australia Branch</a></li>
+            <li><a href="/branches">Delhi Branch</a></li>
+            <li><a href="/branches">Kathmandu Branch</a></li>
+            <li><a href="/branches">Butwal Branch</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+        <div class="faqfrm__visa custom">
+          <h3 class="footer-widget__title mb-25">Get in Touch</h3>
+          <div class="faqfrm__visa-form">
+            <form action="#">
+              <input type="text" placeholder="Name*" aria-label="Name" required />
+              <input type="email" placeholder="Email*" aria-label="Email" required />
+              <input type="tel" placeholder="Phone*" aria-label="Phone" required />
+              <button class="theme-btn" type="submit">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+          <div class="row copyright-bottom-padding align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 text-center">
+              <div class="copyright-bottom">
+                <p>©2024 <a href="#">A One Global</a>. All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+              <div class="copyright-bottom-right">
+                <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Adjust the color and transparency as needed */
+    }
+
+    .animated-footer {
+      position: absolute;
+      width: 100%;
+      height: 250px; /* Adjust as needed */
+      overflow: hidden;
+    }
+
+    .city-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../assets/img/landscape.webp") repeat-x;
+      background-size: cover;
+      background-position: center;
+      animation: scrollBackground 40s linear infinite;
+    }
+
+    @keyframes scrollBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -10000px 0;
+      }
+    }
+
+    .plane {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 100px; /* Adjust as needed */
+      height: 50px; /* Adjust as needed */
+      background: url("../assets/img/plane.png") no-repeat;
+      background-size: contain;
+      animation: flyPlane 10s linear infinite;
+    }
+
+    @keyframes flyPlane {
+      0% {
+        left: 50; /* Fly off the left edge */
+        top: 20%; /* Adjust as needed */
+      }
+      50% {
+        left: 50; /* Center of the screen */
+        top: 30%; /* Adjust as needed */
+      }
+      100% {
+        left: 50; /* Fly off the right edge */
+        top: 20%; /* Adjust as needed */
+      }
+    }
+  </style>
+</footer>
