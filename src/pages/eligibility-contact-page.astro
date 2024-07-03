@@ -7,18 +7,19 @@ const pageDescription = "Contact Page | AONE Global";
 const pageKeywords = "contact, welcome, website";
 const pageAuthor = "Site Author";
 
-// import pageBannerImg from "@assets/img/contact-banner.jpg";
+import pageBannerImg from "@assets/img/contact-banner.jpg"
+import Eligibility from "@components/Eligibility.astro";
 
 
-// const pageBanner = { url: pageBannerImg.src };
+const pageBanner = { url: pageBannerImg.src };
 
 ---
 
 <!-- src/pages/index.astro -->
 <MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
-  <!-- <PageTitle title="Study in Australia" banner={pageBanner} /> -->
+  <PageTitle title="Eligibility Test" banner={pageBanner} />
 
   <main>
-    <Contact />
+<Eligibility/>
   </main>
 </MainLayout>
