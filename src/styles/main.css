@@ -8566,3 +8566,8 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.visa-details img {
+  width: 100%;
+  height: auto;
+}

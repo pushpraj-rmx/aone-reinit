@@ -5,7 +5,7 @@ import PageTitle from "@components/Page-Title.astro";
 import Image from "astro/components/Image.astro";
 import pageBannerImg from "@assets/img/country-img/australia_bg.jpg";
 import courseImg from "@assets/img/course/course1.jpeg";
-import ieltsImg from "@assets/img/course/Ielts.jpg";
+import toeflImg from "@assets/img/course/toefl-test.png";
 import Contact from "@components/Contact.astro";
 
 const pageTitle = "TOEFL Test Preparation";
@@ -64,7 +64,7 @@ const pageBanner = { url: courseImg.src };
                     </p>
                   </div>
                   <div class="col-6">
-                    <Image src={ieltsImg} alt="" />
+                    <Image src={toeflImg} alt="" />
                   </div>
                 </div>
               </div>
@@ -316,35 +316,5 @@ const pageBanner = { url: courseImg.src };
       </div>
     </div>
     <Contact />
-
-    <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   // Function to handle tab switching
-      //   function handleTabSwitch(tabButtons, tabPanes) {
-      //     tabButtons.forEach((button) => {
-      //       button.addEventListener("click", function (event) {
-      //         event.preventDefault();
-
-      //         // Remove active class from all tab buttons and tab panes
-      //         tabButtons.forEach((btn) => btn.classList.remove("active"));
-      //         tabPanes.forEach((pane) => pane.classList.remove("active"));
-
-      //         // Add active class to the clicked tab button
-      //         button.classList.add("active");
-
-      //         // Add active class to the corresponding tab pane
-      //         const targetPaneId = button.getAttribute("href").substring(1);
-      //         const targetPane = document.getElementById(targetPaneId);
-      //         targetPane.classList.add("active");
-      //       });
-      //     });
-      //   }
-
-      //   // Handle main country tabs
-      //   const mainTabButtons = document.querySelectorAll("#mainTabs .nav-link");
-      //   const mainTabPanes = document.querySelectorAll(".tab-content .tab-pane");
-      //   handleTabSwitch(mainTabButtons, mainTabPanes);
-      // });
-    </script>
   </main>
 </MainLayout>
