@@ -1,0 +1,18 @@
+---
+import { Markdown } from 'astro/components';
+
+const { title, date, description } = Astro.props;
+---
+<html>
+<head>
+    <title>{title}</title>
+</head>
+<body>
+    <h1>{title}</h1>
+    <p>{date}</p>
+    <Markdown>
+        {description}
+        {Astro.content}
+    </Markdown>
+</body>
+</html>
