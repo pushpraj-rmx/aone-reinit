@@ -3,7 +3,6 @@ import logo from "@assets/img/logo/logo.webp";
 import { Image } from "astro:assets";
 ---
 
-<!-- src/components/Header.astro -->
 <header>
   <div class="header-top">
     <div class="container">
@@ -24,16 +23,12 @@ import { Image } from "astro:assets";
         </div>
         <div class="col-xxl-4 col-lg-6">
           <div class="topheader-info">
-            <!-- <div class="top-button f-right">
-              <a href="/contact-us">Apply Now</a>
-            </div> -->
             <div class="header-location f-right">
               <ul style="display: flex;">
                 <li style="margin-right: 10px;">
                   <i class="fas fa-headset brand-color2 font-bold"></i>
                   <a href="/contact-us" class="brand-color2 font-bold brand-color2 font-bold">Request a Callback</a>
                 </li>
-
                 <li>
                   <a href="https://www.facebook.com/aoneglobaldelhi" target="_blank">
                     <i class="brand-color2 font-bold fab fa-facebook"></i>
@@ -66,7 +61,7 @@ import { Image } from "astro:assets";
       <div class="row align-items-center">
         <div class="col-xxl-2 col-xl-2 col-lg-2 col-8">
           <div class="header-logo">
-            <a href="6"><Image src={logo} class="img-fluid" alt="img" /></a>
+            <a href="/"><Image src={logo} class="img-fluid" alt="img" /></a>
           </div>
         </div>
         <div class="col-xxl-7 col-xl-7 col-lg-7 col-4">
@@ -114,13 +109,12 @@ import { Image } from "astro:assets";
                     <li><a href="/interview"> Interview Preparation</a></li>
                   </ul>
                 </li>
-                <li class="menu-item-has-children">
+                <li class="">
                   <a href="/contact-us">MBBS</a>
                 </li>
-                <li class="menu-item-has-children">
+                <li class="">
                   <a href="/contact-us">Contact</a>
                 </li>
-                <!-- <li><a href="/contact-us">Study Abroad</a></li> -->
               </ul>
             </nav>
           </div>
@@ -130,13 +124,7 @@ import { Image } from "astro:assets";
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-3">
           <div class="main-menu-wrapper d-flex align-items-center justify-content-end">
-            <!-- <div class="main-menu-wrapper__search text-left">
-              <a class="search-btn nav-search search-trigger" href="#"><i class="fal fa-search"></i></a>
-            </div> -->
             <div class="main-menu-wrapper__call-number d-flex align-items-center">
-              <!-- <div class="main-menu-wrapper__call-icon mr-10">
-                <img src="/img/menu-icon/chatting.png" alt="" />
-              </div> -->
               <div class="main-menu-wrapper__call-text">
                 <div class="top-button f-right">
                   <a href="/eligibility-contact-page">Free Counselling</a>
